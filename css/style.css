@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+div {
+    background-image: url(https://www.pundro.com/affiliate/img/bg/1.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    
+    border-top: 2px solid black;
+    
+
+}
+/* this is main nav list  */
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px;
+    font-size: 15px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgb(158, 166, 173);
+    font-family: sans-serif;
+    font-size: 17px;
+    transition: .5s;
+}
+
+nav ul li:hover>a {
+    /* background-color: rgb(116, 202, 252); */
+    color: white;
+    border-radius: 10px;
+}
+
+ nav ul li ul li { /*this is sub manu list  */
+
+    display: block;
+}
+
+/* this is sub manu list ancor */
+nav ul li ul li a {
+    color: black;
+    padding: 10px;
+
+}
+
+nav ul li ul li:hover>a {
+    background-color: honeydew;
+    color: black;
+}
+
+/* this is sub manu ul  */
+nav ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(131, 155, 156);
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    margin-top: 5px;
+    border-radius: 10px;
+    
+}
+
+nav ul li:hover>ul {
+    opacity: .8;
+    visibility: visible;
+}
+
+nav ul li ul {
+    width: 220px;
+}
+
+/* this is the 3rd sub manu */
+nav ul li ul li ul {
+    background-color: rgb(173, 193, 194);
+    position: absolute;
+    left: 95%;
+    top: 5px;
+}
